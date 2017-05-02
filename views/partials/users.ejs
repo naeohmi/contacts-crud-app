@@ -1,0 +1,12 @@
+<h3>All My Friends</h3>
+<ul>
+    <% data.forEach(function(d) { %>
+        <li data-id=<%=d.id%>>
+            <form method="POST" id="editForm">
+                <input class="input_item" type="text" name="first" placeholder="<%= d.first %>">
+                <button class="edit">edit</button>
+                <button class="delete">delete</button>
+            </form>
+        </li>
+        <% }) %>
+</ul>
